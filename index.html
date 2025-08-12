@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Love</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="relative overflow-hidden">
+    <!-- Floating hearts background -->
+    <div id="hearts-container"></div>
+    
+    <!-- Main content -->
+    <div class="min-h-screen flex flex-col items-center justify-center p-4 relative z-10">
+        <div class="bouquet mb-8">
+            <img src="https://placehold.co/300x200" alt="Beautiful bouquet of pink and white roses with baby's breath flowers" class="rounded-lg" />
+        </div>
+        
+        <div class="message-box bg-gradient-to-r from-pink-50 to-purple-50 p-8 rounded-xl max-w-md w-full text-center mb-8">
+            <h1 class="thank-you-text text-5xl md:text-6xl font-bold text-pink-600 mb-4 heartbeat">Thank You</h1>
+            <p class="text-lg mb-4">For your thoughtful gift, my love...</p>
+            
+            <div class="relative inline-block">
+                <div id="love-message" class="typewriter text-2xl md:text-3xl font-bold text-purple-700"></div>
+            </div>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl w-full">
+            <div class="bg-white bg-opacity-70 p-6 rounded-xl shadow-md hover:shadow-lg transition-all">
+                <h2 class="text-xl font-bold text-pink-600 mb-2">You Make Me So Happy</h2>
+                <p class="text-gray-700">Every day with you is a gift I cherish. Thank you for always thinking of me.</p>
+            </div>
+            <div class="bg-white bg-opacity-70 p-6 rounded-xl shadow-md hover:shadow-lg transition-all">
+                <h2 class="text-xl font-bold text-pink-600 mb-2">I'm So Lucky</h2>
+                <p class="text-gray-700">Your kindness and love mean everything to me. I love you more than words can say.</p>
+            </div>
+        </div>
+        
+        <button id="love-btn" class="mt-8 px-8 py-3 bg-gradient-to-r from-pink-500 to-purple-500 text-white rounded-full font-bold text-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
+            Click for More Love
+        </button>
+    </div>
+    
+    <!-- Hidden love messages -->
+    <div id="extra-love" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 hidden">
+        <div class="bg-white p-8 rounded-xl max-w-md mx-4 relative">
+            <button id="close-love" class="absolute top-4 right-4 text-2xl font-bold text-gray-600 hover:text-pink-500">&times;</button>
+            <img src="https://placehold.co/600x400" alt="Couple silhouette watching sunset together at the beach" class="w-full h-48 object-cover rounded-lg mb-4" />
+            <h2 class="text-3xl font-bold text-center text-pink-600 mb-4 shake-animation">I Love You So Much!</h2>
+            <div id="random-message" class="text-lg text-center text-gray-700"></div>
+            <div class="mt-6 grid grid-cols-3 gap-2">
+                <div class="heart text-center text-red-500 text-2xl">❤️</div>
+                <div class="heart text-center text-pink-500 text-2xl">❤️</div>
+                <div class="heart text-center text-purple-500 text-2xl">❤️</div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
